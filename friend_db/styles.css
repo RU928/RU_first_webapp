@@ -1,0 +1,70 @@
+body {
+  font-family: YuGothic, sans-serif;
+  color: gray;
+  margin: 0;
+  padding: 8px;
+  text-align: center;
+}
+
+div {
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.h1 {
+  display: block;
+  text-align: center;
+}
+
+h1 {
+  width: 350px;
+  display: inline-block;
+  text-align: center;
+  font-weight: normal;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-size: 24px;
+  border-bottom: solid;
+  border-color: #248;
+}
+
+
+
+input {
+  margin: 6px;
+  width: 100px;
+  height: 20px;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  background-color: #248;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+button {
+  background-color: #248;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 10px 30px;
+}
+
+.btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+}
+
+.s_box {
+  text-align: center;
+  margin: 0;
+  width: 350px;
+}
+
+.right {
+  margin-left: 20px;
+}

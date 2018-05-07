@@ -1,27 +1,38 @@
 <!DOCTYPE html>
-<?php
-$name = "田中";
-?>
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>HTML内でのPHP処理</title>
+		<title>友達DB</title>
+    <link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
-	   <h1><?php echo 'フドデータベース';  ?></h1>
-     <?php
-     $text = "あなたの友達の情報をデータベースに登録します";
-     echo "<p> $text </p>";
-		 //$span = "<span style='color:red'>  $name さん。</span>";
-		 //echo $span;
-     ?>
+    <div class="h1">
+	   <h1>友達データベース</h1>
+   </div>
 
-		 <form action="getform.php" method="post">
-			 	姓: <input type="text" name="last" /><br>
-				名: <input type="text" name="first" /><br>
-				知り合った場所: <input type="text" name="place" /><br>
-				<input type="submit" />
-			</form>
+     <div class="m_box">
+       <p>友達登録</p>
+       <div class="s_box">
+    		 <form action="getform.php" method="post">
+    			 	姓: <input type="text" name="last" /><br>
+    				名: <input type="text" name="first" /><br>
+    				出会った場所: <input type="text" name="place" /><br>
+    				<!-- <input type="submit" value="登録"/> -->
+            <div class="btn"><button type="submit" name="action" value="save">登録</button></div>
+    			</form>
+      </div>
+      </div>
 
+      <div class="m_box right">
+        <p>友達検索</p>
+        <div class="s_box">
+          <form action="getform.php" method="post">
+     			 	姓: <input type="text" name="last" /><br>
+     				名: <input type="text" name="first" /><br>
+     				出会った場所: <input type="text" name="place" /><br>
+     				<!-- <input type="submit" value="検索"/> -->
+            <div class="btn"><button type="submit" name="action" value="search">検索</button></div>
+        </div>
+      </div>
 	</body>
 </html>
